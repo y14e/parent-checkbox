@@ -1,7 +1,7 @@
 /**
  * parent-checkbox.ts
  *
- * @version 1.0.3
+ * @version 1.0.4
  * @author Yusuke Kamiyamane
  * @license MIT
  * @copyright Copyright (c) Yusuke Kamiyamane
@@ -55,7 +55,7 @@ export default class ParentCheckbox {
   }
 
   #initialize() {
-    const { signal } = this.#controller as AbortController;
+    const { signal } = this.#controller ?? new AbortController();
     this.#rootElement.addEventListener('change', this.#onRootChange, {
       signal,
     });
