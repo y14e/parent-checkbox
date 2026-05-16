@@ -1,7 +1,7 @@
 /**
  * parent-checkbox.ts
  *
- * @version 1.0.5
+ * @version 1.0.6
  * @author Yusuke Kamiyamane
  * @license MIT
  * @copyright Copyright (c) Yusuke Kamiyamane
@@ -15,7 +15,7 @@
 export default class ParentCheckbox {
   #rootElement: HTMLInputElement;
   #childElements: HTMLInputElement[];
-  #controller: AbortController | null = new AbortController();
+  #controller: AbortController | null = null;
   #isDestroyed = false;
 
   constructor(root: HTMLInputElement) {
@@ -47,7 +47,8 @@ export default class ParentCheckbox {
   }
 
   #initialize() {
-    const { signal } = this.#controller ?? new AbortController();
+    this.#controller = new AbortController();
+    const { signal } = this.#controller;
     this.#rootElement.addEventListener('change', this.#onRootChange, {
       signal,
     });
