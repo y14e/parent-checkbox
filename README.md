@@ -1,12 +1,10 @@
-# parent-checkbox.ts
+# Parent Checkbox
 
-WAI-ARIA compliant [checkbox](https://www.w3.org/WAI/ARIA/apg/patterns/checkbox/) (mixed-state) pattern implementation in TypeScript.
+WAI-ARIA compliant [checkbox](https://www.w3.org/WAI/ARIA/apg/patterns/checkbox/) (mixed) pattern implementation in TypeScript.
 
 ## Usage
 
 ```ts
-import ParentCheckbox from './parent-checkbox';
-
 new ParentCheckbox(root);
 // => ParentCheckbox
 //
@@ -25,4 +23,4 @@ checkbox.destroy();
 ```
 ## Demo
 
-https://y14e.github.io/parent-checkbox-ts/
+https://y14e.github.io/parent-checkbox/

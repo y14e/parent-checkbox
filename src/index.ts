@@ -1,11 +1,12 @@
 /**
- * parent-checkbox.ts
+ * Parent Checkbox
+ * WAI-ARIA compliant checkbox (mixed) pattern implementation in TypeScript.
  *
  * @version 1.0.7
  * @author Yusuke Kamiyamane
  * @license MIT
  * @copyright Copyright (c) Yusuke Kamiyamane
- * @see {@link https://github.com/y14e/parent-checkbox-ts}
+ * @see {@link https://github.com/y14e/parent-checkbox}
  */
 
 // -----------------------------------------------------------------------------
