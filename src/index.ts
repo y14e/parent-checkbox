@@ -2,7 +2,7 @@
  * Parent Checkbox
  * WAI-ARIA compliant checkbox (mixed) pattern implementation in TypeScript.
  *
- * @version 1.0.8
+ * @version 1.0.9
  * @author Yusuke Kamiyamane
  * @license MIT
  * @copyright Copyright (c) Yusuke Kamiyamane
@@ -40,7 +40,7 @@ export default class ParentCheckbox {
     this.#initialize();
   }
 
-  destroy() {
+  destroy(): void {
     if (this.#isDestroyed) {
       return;
     }
@@ -52,7 +52,7 @@ export default class ParentCheckbox {
     this.#rootElement.removeAttribute('data-parent-checkbox-initialized');
   }
 
-  #initialize() {
+  #initialize(): void {
     this.#controller = new AbortController();
     const { signal } = this.#controller;
     this.#rootElement.addEventListener('change', this.#onRootChange, {
@@ -67,14 +67,14 @@ export default class ParentCheckbox {
     this.#rootElement.setAttribute('data-parent-checkbox-initialized', '');
   }
 
-  #update() {
+  #update(): void {
     const isAllChecked = this.#childElements.every((child) => child.checked);
     this.#rootElement.checked = isAllChecked;
     this.#rootElement.indeterminate =
       !isAllChecked && this.#childElements.some((child) => child.checked);
   }
 
-  #onRootChange = () => {
+  #onRootChange = (): void => {
     this.#rootElement.indeterminate = false;
     const isChecked = this.#rootElement.checked;
 
@@ -83,7 +83,7 @@ export default class ParentCheckbox {
     });
   };
 
-  #onChildChange = () => {
+  #onChildChange = (): void => {
     this.#update();
   };
 }

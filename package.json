@@ -1,6 +1,6 @@
 {
   "name": "@y14e/parent-checkbox",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "WAI-ARIA compliant checkbox (mixed) pattern implementation in TypeScript",
   "type": "module",
   "main": "./dist/index.cjs",
