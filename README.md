@@ -10,14 +10,14 @@ npm i @y14e/parent-checkbox
 
 ```ts
 // npm
-import ParentCheckbox from '@y14e/parent-checkbox';
+import ParentCheckbox from '@y14e/parent-checkbox@1.0.9';
 
 // CDNs
-import ParentCheckbox from 'https://esm.sh/@y14e/parent-checkbox'
+import ParentCheckbox from 'https://esm.sh/@y14e/parent-checkbox@1.0.9';
 // or
-import ParentCheckbox from 'https://cdn.jsdelivr.net/npm/@y14e/parent-checkbox/+esm';
+import ParentCheckbox from 'https://cdn.jsdelivr.net/npm/@y14e/parent-checkbox@1.0.9/+esm';
 // or
-import ParentCheckbox from 'https://unpkg.com/@y14e/parent-checkbox/dist/index.js';
+import ParentCheckbox from 'https://esm.unpkg.com/@y14e/parent-checkbox@1.0.9';
 ```
 
 ## Usage
