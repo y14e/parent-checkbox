@@ -13,11 +13,11 @@ npm i @y14e/parent-checkbox
 import { ParentCheckbox } from '@y14e/parent-checkbox';
 
 // CDNs
-import { ParentCheckbox } from 'https://esm.sh/@y14e/parent-checkbox@1.0.13';
+import { ParentCheckbox } from 'https://esm.sh/@y14e/parent-checkbox@1.0.14';
 // or
-import { ParentCheckbox } from 'https://cdn.jsdelivr.net/npm/@y14e/parent-checkbox@1.0.13/+esm';
+import { ParentCheckbox } from 'https://cdn.jsdelivr.net/npm/@y14e/parent-checkbox@1.0.14/+esm';
 // or
-import { ParentCheckbox } from 'https://esm.unpkg.com/@y14e/parent-checkbox@1.0.13';
+import { ParentCheckbox } from 'https://esm.unpkg.com/@y14e/parent-checkbox@1.0.14';
 ```
 
 ## Usage
