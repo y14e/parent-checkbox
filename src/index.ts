@@ -40,9 +40,7 @@ export class ParentCheckbox {
   #initialize(): void {
     this.#controller = new AbortController();
     const { signal } = this.#controller;
-    this.#rootElement.addEventListener('change', this.#onRootChange, {
-      signal,
-    });
+    this.#rootElement.addEventListener('change', this.#onRootChange, { signal });
 
     for (const child of this.#childElements) {
       child.addEventListener('change', this.#onChildChange, { signal });
@@ -55,8 +53,7 @@ export class ParentCheckbox {
   #update(): void {
     const isAllChecked = this.#childElements.every((c) => c.checked);
     this.#rootElement.checked = isAllChecked;
-    this.#rootElement.indeterminate =
-      !isAllChecked && this.#childElements.some((c) => c.checked);
+    this.#rootElement.indeterminate = !isAllChecked && this.#childElements.some((c) => c.checked);
   }
 
   #onRootChange = (): void => {
