@@ -23,10 +23,10 @@ import { ParentCheckbox } from 'https://esm.unpkg.com/@y14e/parent-checkbox@1.0.
 ## Usage
 
 ```ts
-new ParentCheckbox(root);
+new ParentCheckbox(element);
 // => ParentCheckbox
 //
-// root: HTMLInputElement
+// element: HTMLInputElement
 ```
 
 ## 📦 APIs
